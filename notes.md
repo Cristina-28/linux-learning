@@ -1,3 +1,4 @@
+
 # Linux Learning Notes
 
 ---
@@ -55,3 +56,32 @@
 - Relative path → depends on where you are (e.g. cd linux-learning)
 - ~ = shortcut for /home/cristina
 - .. = one level up
+
+
+## Module 3 — File viewing, searching & editing
+
+### Commands
+- less file          → scroll through a file (q to quit, /word to search)
+- tail -f file       → watch a file update live (Ctrl+C to stop)
+- grep "word" file   → search for text inside a file
+- grep -i            → case-insensitive
+- grep -n            → show line numbers
+- grep -r "word" .   → search recursively in all files
+- find . -name "x"   → find a file by name
+- find . -name "*.md"→ find all files with extension
+- find . -type d     → find directories only
+- find . -type f     → find files only
+
+### Vim basics
+- vim file     → open file
+- i            → enter Insert mode (now you can type)
+- Esc          → back to Normal mode
+- :w           → save
+- :q           → quit
+- :wq          → save and quit
+- :q!          → quit without saving
+
+### Key concepts
+- grep searches INSIDE files, find searches FOR files
+- find searches subfolders by default, grep needs -r
+- Vim has modes — always press Esc before issuing commands
